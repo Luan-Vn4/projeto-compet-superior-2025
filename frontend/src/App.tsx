@@ -19,8 +19,8 @@ function App() {
     if (!themeInputRef.current?.value) return;
 
     const formData = new FormData();
-    formData.append('theme', themeInputRef.current.value);
-    formData.append('file', file);
+    formData.append('tema', themeInputRef.current.value);
+    formData.append('imagem', file);
 
     const response = await fetch(`${API_ENDPOINT}/correcao`, {
       method: "POST",
@@ -28,6 +28,8 @@ function App() {
     });
 
     const data = await response.json() as Correcao;
+
+    console.log(data)
 
     setCorrecao(data);
   }
@@ -116,6 +118,8 @@ function CorrecaoDisplay({
           return competencia(i+1)
         })
       }
+      <h1>Nota Total: </h1>
+      <p>{correcao.nota_total}</p>
     </section>
   )
 }

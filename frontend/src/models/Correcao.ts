@@ -7,4 +7,5 @@ export interface Correcao {
   competencia3: CorrecaoCompetencia,
   competencia4: CorrecaoCompetencia,
   competencia5: CorrecaoCompetencia,
+  nota_total: number,
 }
