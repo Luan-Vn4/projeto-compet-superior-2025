@@ -9,9 +9,6 @@ O sistema é composto por uma **arquitetura distribuída** com múltiplas APIs q
 ---
 
 # Como rodar:
-
-Claro! Aqui está uma seção **"Como rodar o projeto"** que você pode adicionar ao seu `README.md`, seguindo os padrões mais comuns usados no GitHub para projetos Python com múltiplas APIs e um frontend React:
-
 ---
 
 ## Como rodar o projeto
