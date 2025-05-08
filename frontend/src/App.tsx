@@ -4,9 +4,10 @@ import {type FormEvent, useRef, useState} from "react";
 import {FileDragZone} from "./components/FileDragZone.tsx";
 import type {Correcao} from "./models/Correcao.ts";
 
-const API_ENDPOINT = 'http://localhost:8000';
+const API_ENDPOINT = import.meta.env.VITE_API_URL as string;
 
 function App() {
+  console.log(API_ENDPOINT);
   const [file, setFile] = useState<File | null>(null);
   const themeInputRef = useRef<HTMLInputElement>(null);
   const [correcao, setCorrecao] = useState<Correcao | null>(null);
