@@ -70,7 +70,7 @@ A aplicação React deve estar disponível em `http://localhost:5173` ou a porta
 
 ## Componentes da Arquitetura
 
-![Diagrama de Arquitetura](https://imgur.com/a/mhvz0T7)
+![Diagrama de Arquitetura](https://i.imgur.com/6OpW9rI.png)
 
 A arquitetura do sistema é composta pelos seguintes serviços:
 
